@@ -12,6 +12,7 @@ class Tamp extends CI_Controller {
 
 	public function index()
 	{
+		
 		$this->load->view('template/head');
 		$this->load->view('index');
 		$this->load->view('template/foot');
@@ -26,8 +27,8 @@ class Tamp extends CI_Controller {
 
 	public function form()
 	{	
-		$this->form_validation->set_rules('nama','nama','require');
-		$this->form_validation->set_rules('coord','coord','require');
+		$this->form_validation->set_rules('nama','nama','required');
+		$this->form_validation->set_rules('coord','coord','required');
 	
 		if ($this->form_validation->run()==false){
 			$this->load->view('template/head');

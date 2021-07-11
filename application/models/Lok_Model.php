@@ -35,7 +35,7 @@ class Lok_Model extends CI_Model
     public function ubahlokasi()
     {
         $data = [
-            "id_lok" => $this->input->post('id_lokasi', true),
+            "id_lokasi" => $this->input->post('id_lokasi', true),
             "nama" => $this->input->post('nama', true),
             "coord" => $this->input->post('coord', true),
             
